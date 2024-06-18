@@ -1,0 +1,95 @@
+/* src/components/ProfileCard.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.profile-card {
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 350px;
+    text-align: center;
+    background: linear-gradient(145deg, #e0e0e0, #ffffff);
+    box-shadow: 8px 8px 15px #bebebe, -8px -8px 15px #ffffff;
+    transition: transform 0.4s, box-shadow 0.4s;
+    margin: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.profile-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 12px 12px 24px #bebebe, -12px -12px 24px #ffffff;
+}
+
+.profile-card::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: transform 0.4s, background 0.4s;
+}
+
+.profile-card:hover::before {
+    transform: scale(1.6);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #217756;
+    z-index: 1;
+    position: relative;
+}
+
+h2 {
+    font-size: 1.85em;
+    margin: 0.5em 0;
+    color: #333;
+    z-index: 1;
+    position: relative;
+}
+
+p {
+    font-size: 1.05em;
+    margin: 0.5em 0;
+    color: #666;
+    z-index: 1;
+    position: relative;
+}
+
+.profile-card .bio {
+    font-style: italic;
+    color: #444;
+}
+
+.profile-card .age {
+    font-weight: bold;
+    color: #217756;
+}
+
+.profile-card .social-icons {
+    margin-top: 20px;
+    z-index: 1;
+    position: relative;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #217756;
+    margin: 0 12px;
+    font-size: 1.3em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0d5235;
+    transform: scale(1.2);
+}
