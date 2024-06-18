@@ -54,7 +54,7 @@ const App = () => {
             bio: 'Software Engineer from San Francisco.'
         },
         {
-            name: 'Elaine',
+            name: 'chepkorir',
             age: 30,
             profilePicture: 'https://randomuser.me/api/portraits/women/2.jpg',
             bio: 'Software Engineer from San Francisco.'
@@ -103,7 +103,7 @@ const App = () => {
         },
 
         {
-            name: 'Laureen',
+            name: 'Laurence',
             age: 35,
             profilePicture: 'https://randomuser.me/api/portraits/men/12.jpg',
             bio: 'Product Manager from Chicago.'
